@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Información de mi dispositivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="badge">🔎 DEMO DE PRIVACIDAD</div>
+      <h1>¿Qué puede ver una página sobre tu dispositivo?</h1>
+      <p>Esta demo muestra únicamente información que el navegador permite consultar. La ubicación solo se solicita si tú pulsas el botón.</p>
+    </header>
+
+    <section class="card">
+      <h2>Información disponible</h2>
+      <div id="info" class="grid">
+        <div class="loading">Cargando…</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>📍 Ubicación</h2>
+      <p>La ubicación no se solicita automáticamente. Debes pulsar el botón y aceptar el permiso del navegador.</p>
+      <button id="locationBtn">Compartir mi ubicación</button>
+      <div id="locationResult" class="result"></div>
+    </section>
+
+    <section class="card">
+      <h2>🔋 Batería</h2>
+      <p id="battery">Consultando…</p>
+    </section>
+
+    <footer>
+      <p>No se envían datos a ningún servidor en esta versión.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
